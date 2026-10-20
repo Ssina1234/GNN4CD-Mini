@@ -1,0 +1,401 @@
+[1/6] Loading graph and target ...
+      target shape: (88, 8760)
+      low.x shape:  (169, 8760, 5, 5)
+      high.x shape: (88, 1)
+
+      Using BLOCKED RANDOM SPLIT (block_size=30)
+      train: 6990 samples
+      val:   870 samples
+      test:  876 samples
+      train month distribution: [526, 700, 490, 550, 580, 550, 564, 536, 640, 670, 584, 600]
+      val   month distribution: [120, 30, 90, 150, 60, 120, 60, 30, 60, 30, 56, 64]
+      test  month distribution: [60, 0, 150, 30, 90, 60, 106, 164, 30, 30, 90, 66]
+      train after NaN filter: 6969
+
+[2/6] Computing normalization statistics ...
+
+[3/6] Building dataset ...
+
+[4/6] Initializing model ...
+      trainable params: 237,049
+
+[5/6] Training for 20 epochs (patience=10) ...
+
+      Epoch 1/20 (6969 batches)
+        step 500/6969  loss=0.001643
+        step 1000/6969  loss=0.003054
+        step 1500/6969  loss=0.002339
+        step 2000/6969  loss=0.001263
+        step 2500/6969  loss=0.195745
+        step 3000/6969  loss=0.000916
+        step 3500/6969  loss=0.111488
+        step 4000/6969  loss=0.000440
+        step 4500/6969  loss=0.012792
+        step 5000/6969  loss=0.000775
+        step 5500/6969  loss=0.001242
+        step 6000/6969  loss=0.000495
+        step 6500/6969  loss=0.008324
+        step 6969/6969  loss=0.000745
+      Epoch 1 (11.5 min): train=0.044588, val=0.042416, lr=1.00e-04
+        [BEST] checkpoint saved (val=0.042416)
+
+      Epoch 2/20 (6969 batches)
+        step 500/6969  loss=0.001703
+        step 1000/6969  loss=0.001888
+        step 1500/6969  loss=0.000295
+        step 2000/6969  loss=0.000814
+        step 2500/6969  loss=0.000155
+        step 3000/6969  loss=0.000501
+        step 3500/6969  loss=0.082904
+        step 4000/6969  loss=0.000701
+        step 4500/6969  loss=0.000154
+        step 5000/6969  loss=0.000339
+        step 5500/6969  loss=0.000648
+        step 6000/6969  loss=0.000446
+        step 6500/6969  loss=0.000385
+        step 6969/6969  loss=0.003455
+      Epoch 2 (11.5 min): train=0.034718, val=0.028890, lr=1.00e-04
+        [BEST] checkpoint saved (val=0.028890)
+
+      Epoch 3/20 (6969 batches)
+        step 500/6969  loss=0.005333
+        step 1000/6969  loss=0.059432
+        step 1500/6969  loss=0.001600
+        step 2000/6969  loss=0.002744
+        step 2500/6969  loss=0.000112
+        step 3000/6969  loss=0.242478
+        step 3500/6969  loss=0.003533
+        step 4000/6969  loss=0.000990
+        step 4500/6969  loss=0.000223
+        step 5000/6969  loss=0.000672
+        step 5500/6969  loss=0.000088
+        step 6000/6969  loss=0.000159
+        step 6500/6969  loss=0.000060
+        step 6969/6969  loss=0.003871
+      Epoch 3 (11.5 min): train=0.033679, val=0.025190, lr=1.00e-04
+        [BEST] checkpoint saved (val=0.025190)
+
+      Epoch 4/20 (6969 batches)
+        step 500/6969  loss=0.030616
+        step 1000/6969  loss=0.000705
+        step 1500/6969  loss=0.000026
+        step 2000/6969  loss=0.000104
+        step 2500/6969  loss=0.000506
+        step 3000/6969  loss=0.004618
+        step 3500/6969  loss=0.000146
+        step 4000/6969  loss=0.000116
+        step 4500/6969  loss=0.000677
+        step 5000/6969  loss=0.000208
+        step 5500/6969  loss=0.865188
+        step 6000/6969  loss=0.000182
+        step 6500/6969  loss=0.000036
+        step 6969/6969  loss=0.000022
+      Epoch 4 (11.5 min): train=0.029156, val=0.037851, lr=1.00e-04
+        no improvement (1/10)
+
+      Epoch 5/20 (6969 batches)
+        step 500/6969  loss=0.000462
+        step 1000/6969  loss=0.045254
+        step 1500/6969  loss=0.000031
+        step 2000/6969  loss=0.000618
+        step 2500/6969  loss=0.000023
+        step 3000/6969  loss=0.000124
+        step 3500/6969  loss=0.016528
+        step 4000/6969  loss=0.006794
+        step 4500/6969  loss=0.153934
+        step 5000/6969  loss=0.000122
+        step 5500/6969  loss=0.000082
+        step 6000/6969  loss=0.000075
+        step 6500/6969  loss=0.000824
+        step 6969/6969  loss=0.000126
+      Epoch 5 (11.5 min): train=0.025915, val=0.027494, lr=1.00e-04
+        no improvement (2/10)
+
+      Epoch 6/20 (6969 batches)
+        step 500/6969  loss=0.000661
+        step 1000/6969  loss=0.000301
+        step 1500/6969  loss=0.182240
+        step 2000/6969  loss=0.000305
+        step 2500/6969  loss=0.004307
+        step 3000/6969  loss=0.053013
+        step 3500/6969  loss=0.001998
+        step 4000/6969  loss=0.000114
+        step 4500/6969  loss=0.000050
+        step 5000/6969  loss=0.000377
+        step 5500/6969  loss=0.000070
+        step 6000/6969  loss=0.065951
+        step 6500/6969  loss=0.000029
+        step 6969/6969  loss=0.000189
+      Epoch 6 (11.5 min): train=0.025017, val=0.030495, lr=1.00e-04
+        no improvement (3/10)
+
+      Epoch 7/20 (6969 batches)
+        step 500/6969  loss=0.000866
+        step 1000/6969  loss=0.000047
+        step 1500/6969  loss=0.010968
+        step 2000/6969  loss=0.000102
+        step 2500/6969  loss=0.000109
+        step 3000/6969  loss=0.000347
+        step 3500/6969  loss=0.000136
+        step 4000/6969  loss=0.000053
+        step 4500/6969  loss=0.002157
+        step 5000/6969  loss=0.000217
+        step 5500/6969  loss=0.000563
+        step 6000/6969  loss=0.000046
+        step 6500/6969  loss=0.000104
+        step 6969/6969  loss=0.101741
+      Epoch 7 (11.5 min): train=0.026214, val=0.035766, lr=1.00e-04
+        no improvement (4/10)
+
+      Epoch 8/20 (6969 batches)
+        step 500/6969  loss=0.000092
+        step 1000/6969  loss=0.000351
+        step 1500/6969  loss=0.000387
+        step 2000/6969  loss=0.000500
+        step 2500/6969  loss=0.000127
+        step 3000/6969  loss=0.000045
+        step 3500/6969  loss=0.078381
+        step 4000/6969  loss=0.000131
+        step 4500/6969  loss=0.000034
+        step 5000/6969  loss=0.000236
+        step 5500/6969  loss=0.000064
+        step 6000/6969  loss=0.161480
+        step 6500/6969  loss=0.000068
+        step 6969/6969  loss=0.000260
+      Epoch 8 (11.5 min): train=0.022664, val=0.026070, lr=5.00e-05
+        no improvement (5/10)
+
+      Epoch 9/20 (6969 batches)
+        step 500/6969  loss=0.000262
+        step 1000/6969  loss=0.000058
+        step 1500/6969  loss=0.033536
+        step 2000/6969  loss=0.000316
+        step 2500/6969  loss=0.000112
+        step 3000/6969  loss=0.000155
+        step 3500/6969  loss=0.000032
+        step 4000/6969  loss=0.000267
+        step 4500/6969  loss=0.001678
+        step 5000/6969  loss=0.000061
+        step 5500/6969  loss=0.000155
+        step 6000/6969  loss=0.000014
+        step 6500/6969  loss=0.000278
+        step 6969/6969  loss=0.000048
+      Epoch 9 (11.5 min): train=0.019776, val=0.022817, lr=5.00e-05
+        [BEST] checkpoint saved (val=0.022817)
+
+      Epoch 10/20 (6969 batches)
+        step 500/6969  loss=0.089461
+        step 1000/6969  loss=0.000020
+        step 1500/6969  loss=0.000150
+        step 2000/6969  loss=0.000236
+        step 2500/6969  loss=0.000178
+        step 3000/6969  loss=0.020599
+        step 3500/6969  loss=0.000759
+        step 4000/6969  loss=0.000199
+        step 4500/6969  loss=0.028091
+        step 5000/6969  loss=0.000801
+        step 5500/6969  loss=0.000066
+        step 6000/6969  loss=0.000013
+        step 6500/6969  loss=0.184300
+        step 6969/6969  loss=0.000035
+      Epoch 10 (11.5 min): train=0.019258, val=0.027830, lr=5.00e-05
+        no improvement (1/10)
+
+      Epoch 11/20 (6969 batches)
+        step 500/6969  loss=0.190591
+        step 1000/6969  loss=0.000127
+        step 1500/6969  loss=0.000106
+        step 2000/6969  loss=0.003373
+        step 2500/6969  loss=0.000881
+        step 3000/6969  loss=0.000040
+        step 3500/6969  loss=0.169590
+        step 4000/6969  loss=0.000080
+        step 4500/6969  loss=0.000665
+        step 5000/6969  loss=0.221093
+        step 5500/6969  loss=0.066330
+        step 6000/6969  loss=0.009273
+        step 6500/6969  loss=0.001220
+        step 6969/6969  loss=0.000060
+      Epoch 11 (11.5 min): train=0.019511, val=0.024939, lr=5.00e-05
+        no improvement (2/10)
+
+      Epoch 12/20 (6969 batches)
+        step 500/6969  loss=0.000181
+        step 1000/6969  loss=0.000212
+        step 1500/6969  loss=0.206591
+        step 2000/6969  loss=0.000065
+        step 2500/6969  loss=0.002330
+        step 3000/6969  loss=0.000223
+        step 3500/6969  loss=0.000028
+        step 4000/6969  loss=0.000075
+        step 4500/6969  loss=0.005980
+        step 5000/6969  loss=0.000250
+        step 5500/6969  loss=0.000043
+        step 6000/6969  loss=0.000024
+        step 6500/6969  loss=0.000258
+        step 6969/6969  loss=0.000205
+      Epoch 12 (11.5 min): train=0.017634, val=0.018790, lr=5.00e-05
+        [BEST] checkpoint saved (val=0.018790)
+
+      Epoch 13/20 (6969 batches)
+        step 500/6969  loss=0.000258
+        step 1000/6969  loss=0.000078
+        step 1500/6969  loss=0.000043
+        step 2000/6969  loss=0.000051
+        step 2500/6969  loss=0.000063
+        step 3000/6969  loss=0.000024
+        step 3500/6969  loss=0.000034
+        step 4000/6969  loss=0.000150
+        step 4500/6969  loss=0.000056
+        step 5000/6969  loss=0.000419
+        step 5500/6969  loss=0.013283
+        step 6000/6969  loss=0.000209
+        step 6500/6969  loss=0.000260
+        step 6969/6969  loss=0.000169
+      Epoch 13 (11.5 min): train=0.016369, val=0.025974, lr=5.00e-05
+        no improvement (1/10)
+
+      Epoch 14/20 (6969 batches)
+        step 500/6969  loss=0.000070
+        step 1000/6969  loss=0.000069
+        step 1500/6969  loss=0.001029
+        step 2000/6969  loss=0.000023
+        step 2500/6969  loss=0.000459
+        step 3000/6969  loss=0.198710
+        step 3500/6969  loss=0.000032
+        step 4000/6969  loss=0.000099
+        step 4500/6969  loss=0.000195
+        step 5000/6969  loss=0.000093
+        step 5500/6969  loss=0.156596
+        step 6000/6969  loss=0.000083
+        step 6500/6969  loss=0.013902
+        step 6969/6969  loss=0.000033
+      Epoch 14 (11.5 min): train=0.016026, val=0.021808, lr=5.00e-05
+        no improvement (2/10)
+
+      Epoch 15/20 (6969 batches)
+        step 500/6969  loss=0.000395
+        step 1000/6969  loss=0.033823
+        step 1500/6969  loss=0.000097
+        step 2000/6969  loss=0.001664
+        step 2500/6969  loss=0.006083
+        step 3000/6969  loss=0.000150
+        step 3500/6969  loss=0.000052
+        step 4000/6969  loss=0.025955
+        step 4500/6969  loss=0.000016
+        step 5000/6969  loss=0.000045
+        step 5500/6969  loss=0.000098
+        step 6000/6969  loss=0.000134
+        step 6500/6969  loss=0.000030
+        step 6969/6969  loss=0.000089
+      Epoch 15 (11.7 min): train=0.015865, val=0.023908, lr=5.00e-05
+        no improvement (3/10)
+
+      Epoch 16/20 (6969 batches)
+        step 500/6969  loss=0.002060
+        step 1000/6969  loss=0.000049
+        step 1500/6969  loss=0.000014
+        step 2000/6969  loss=0.000056
+        step 2500/6969  loss=0.000143
+        step 3000/6969  loss=0.000045
+        step 3500/6969  loss=0.000104
+        step 4000/6969  loss=0.000127
+        step 4500/6969  loss=0.002264
+        step 5000/6969  loss=0.000442
+        step 5500/6969  loss=0.000023
+        step 6000/6969  loss=0.002340
+        step 6500/6969  loss=0.000092
+        step 6969/6969  loss=0.000166
+      Epoch 16 (11.6 min): train=0.016504, val=0.026117, lr=5.00e-05
+        no improvement (4/10)
+
+      Epoch 17/20 (6969 batches)
+        step 500/6969  loss=0.000143
+        step 1000/6969  loss=0.000112
+        step 1500/6969  loss=0.000008
+        step 2000/6969  loss=0.000222
+        step 2500/6969  loss=0.000159
+        step 3000/6969  loss=0.003252
+        step 3500/6969  loss=0.000199
+        step 4000/6969  loss=0.000541
+        step 4500/6969  loss=0.000014
+        step 5000/6969  loss=0.040175
+        step 5500/6969  loss=0.000055
+        step 6000/6969  loss=0.000225
+        step 6500/6969  loss=0.000029
+        step 6969/6969  loss=0.008221
+      Epoch 17 (11.6 min): train=0.014934, val=0.019590, lr=2.50e-05
+        no improvement (5/10)
+
+      Epoch 18/20 (6969 batches)
+        step 500/6969  loss=0.000749
+        step 1000/6969  loss=0.003246
+        step 1500/6969  loss=0.005572
+        step 2000/6969  loss=0.000041
+        step 2500/6969  loss=0.000070
+        step 3000/6969  loss=0.000013
+        step 3500/6969  loss=0.000122
+        step 4000/6969  loss=0.000414
+        step 4500/6969  loss=0.000068
+        step 5000/6969  loss=0.000220
+        step 5500/6969  loss=0.000048
+        step 6000/6969  loss=0.000008
+        step 6500/6969  loss=0.000030
+        step 6969/6969  loss=0.000016
+      Epoch 18 (11.6 min): train=0.014974, val=0.023597, lr=2.50e-05
+        no improvement (6/10)
+
+      Epoch 19/20 (6969 batches)
+        step 500/6969  loss=0.000026
+        step 1000/6969  loss=0.179927
+        step 1500/6969  loss=0.000036
+        step 2000/6969  loss=0.352514
+        step 2500/6969  loss=0.000324
+        step 3000/6969  loss=0.037767
+        step 3500/6969  loss=0.000080
+        step 4000/6969  loss=0.000036
+        step 4500/6969  loss=0.000013
+        step 5000/6969  loss=0.000038
+        step 5500/6969  loss=0.000142
+        step 6000/6969  loss=0.000069
+        step 6500/6969  loss=0.000391
+        step 6969/6969  loss=0.000040
+      Epoch 19 (11.6 min): train=0.014093, val=0.023796, lr=2.50e-05
+        no improvement (7/10)
+
+      Epoch 20/20 (6969 batches)
+        step 500/6969  loss=0.000039
+        step 1000/6969  loss=0.000065
+        step 1500/6969  loss=0.000050
+        step 2000/6969  loss=0.000872
+        step 2500/6969  loss=0.000185
+        step 3000/6969  loss=0.000071
+        step 3500/6969  loss=0.000135
+        step 4000/6969  loss=0.000022
+        step 4500/6969  loss=0.000119
+        step 5000/6969  loss=0.000042
+        step 5500/6969  loss=0.001172
+        step 6000/6969  loss=0.000056
+        step 6500/6969  loss=0.069042
+        step 6969/6969  loss=0.020014
+      Epoch 20 (11.5 min): train=0.013958, val=0.023074, lr=2.50e-05
+        no improvement (8/10)
+
+      Best epoch: 12/20, best val: 0.018790
+
+[6/6] Loading best model and running Tester ...
+
+============================================================
+FINAL RESULTS (v4 - blocked random split)
+============================================================
+  predictions shape: (88, 876)
+  prediction range:  -0.0762 .. 1.1185
+  observed range:    0.0000 .. 43.8080
+  RMSE:              0.5389 mm/h
+  MAE:               0.1231 mm/h
+  Bias:              -0.0122 mm/h
+  Pearson r:         0.2252
+  best epoch:        12/20
+============================================================
+
+Saved: D:\Sina\GNN4CD-main\year_2007\outputs_v4\G_predictions.pkl
